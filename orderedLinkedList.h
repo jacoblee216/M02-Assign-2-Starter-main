@@ -31,7 +31,7 @@ void orderedLinkedList<Type>::insertNode(const Type& newItem)
         found = false;
 
         while (current != nullptr && !found) {
-            if (*current->info >= *newNode->info) {
+            if (*(current->info) >= *(newNode->info)) {
                 found = true;
             }
             else {

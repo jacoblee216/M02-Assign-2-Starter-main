@@ -16,9 +16,6 @@ public:
     bool operator<=(const Person &other) const;
     bool operator>(const Person &other) const;
     bool operator>=(const Person &other) const;
-    void setName(std::string &name);
-    std::string getName();
-    void setAge(int age);
     int getAge();
     friend std::ostream &operator<<(std::ostream &os, const Person &person);
 

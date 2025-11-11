@@ -37,3 +37,6 @@ std::ostream &operator<<(std::ostream &os, const Person &person)
     os << "Name: " << person.name << ", Age: " << person.age;
     return os;
 }
+int Person::getAge() {
+    return age;
+}

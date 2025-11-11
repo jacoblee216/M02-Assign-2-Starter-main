@@ -1,3 +1,5 @@
+
+
 #include <iostream>
 #include <string>
 #include <fstream>
@@ -7,7 +9,7 @@
 using namespace std;
 
 int main() {
-    cout << "Current working directory: " << filesystem::current_path() << endl;
+
     ifstream inputFile("input1.txt");
     system("cd");
     if (!inputFile.is_open()) {
@@ -23,12 +25,11 @@ int main() {
         index = personInfo.find(' ');
         name = personInfo.substr(0, index);
         age = stoi(personInfo.substr(index));
-        // Person newPerson(name, age);
-        // list.insertNode(newPerson);
+        list.insertNode(Person(name, age));
 
     }   
     inputFile.close();
-
+    list.print(cout);
 
     return 0;
 
